@@ -29,13 +29,9 @@ module.exports = {
     ],
     alias: {
       applicationStyles: 'app/styles/app.scss',
-      AddTodo: 'app/components/AddTodo.jsx',
-      Todo: 'app/components/Todo.jsx',
-      TodoApp: 'app/components/TodoApp.jsx',
-      TodoList: 'app/components/TodoList.jsx',
-      TodoSearch: 'app/components/TodoSearch.jsx',
-
-
+      actions: 'app/actions/actions.jsx',
+      reducers: 'app/reducers/reducers.jsx',
+      configureStore: 'app/store/configureStore.jsx'
     },
     extensions: ['', '.js', '.jsx']
   },

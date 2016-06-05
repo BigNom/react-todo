@@ -2,9 +2,9 @@ var $ = require('jquery');
 
 module.exports = {
   setTodos: function (todos) {
-  if ($.isArray(todos))  {
-    localStorage.setItem('todos', JSON.stringify(todos));
-    return todos;
+    if ($.isArray(todos)) {
+      localStorage.setItem('todos', JSON.stringify(todos));
+      return todos;
     }
   },
   getTodos: function () {
@@ -28,6 +28,10 @@ module.exports = {
     });
 
     // Filter by searchText
+    filteredTodos = filteredTodos.filter((todo) => {
+      var text = todo.text.toLowerCase();
+      return searchText.length === 0 || text.indexOf(searchText) > -1;
+    });
 
     // Sort todos with non-completed first
     filteredTodos.sort((a, b) => {
