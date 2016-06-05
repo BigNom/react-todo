@@ -24,7 +24,8 @@ module.exports = {
     root: __dirname,
     modulesDirectories: [
       'node_modules',
-      './app/components'
+      './app/components',
+      './app/api'
     ],
     alias: {
       applicationStyles: 'app/styles/app.scss',
@@ -32,7 +33,8 @@ module.exports = {
       Todo: 'app/components/Todo.jsx',
       TodoApp: 'app/components/TodoApp.jsx',
       TodoList: 'app/components/TodoList.jsx',
-      TodoSearch: 'app/components/TodoSearch.jsx'
+      TodoSearch: 'app/components/TodoSearch.jsx',
+
 
     },
     extensions: ['', '.js', '.jsx']
